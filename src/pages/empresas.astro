@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { arrayLogos } from '../../assets/dataEmpresas.js'
+---
+<Layout title='Empresas'>
+    <section class="border-[1px] border-[#17449c] rounded-lg p-2">
+        <picture class="w-full h-auto gap-2 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {
+                arrayLogos.map((logo) => {
+                    return (
+                        <div class="flex justify-center items-center">
+                            <img class="w-[170px] h-auto" src={logo.image} alt={logo.name}>
+                        </div>
+                        
+                    )
+                })
+            }
+        </picture>
+    </section>
+</Layout>
+

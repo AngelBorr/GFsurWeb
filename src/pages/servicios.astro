@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { sectionImgCenter, sectionImgProfesionalismo, sectionImgResponsabilidad } from '../../assets/dataSectionImg.js'
+
+const { imgRes1, imgRes2, imgRes3 } = sectionImgResponsabilidad;
+const { image1, image2, image3, image4 } = sectionImgCenter
+const { imgProf1, imgProf2, imgProf3, imgProf4 } = sectionImgProfesionalismo
+---
+<Layout title="Servicios">    
+    <section>
+        <picture>
+            <img class="absolute z-9 w-[100px] sm:w-[130px] md:w-[160px] lg:w-[250px] h-auto top-[170px] lg:top-[110px] left-[20px] sm:left-[15px] md:left-[50px] rounded-lg" src={imgRes1} alt="">
+            <img class="absolute z-9 w-[100px] sm:w-[130px] md:w-[160px] lg:w-[250px] h-auto top-[640px] right-[20px] sm:top-[400px] md:top-[370px] lg:top-[290px] md:right-[50px] rounded-lg" src={imgRes2} alt="">
+            <img  class="absolute z-9 w-[100px] sm:w-[130px] md:w-[160px] lg:w-[250px] h-auto top-[1100px] left-[20px] sm:top-[630px] md:top-[580px] lg:top-[480px] md:left-[50px] rounded-lg" src={imgRes3} alt="">
+        </picture>
+        <div class="border border-[#17449c] rounded-lg ml-[50px] mr-[50px] sm:ml-[70px] sm:mr-[70px] md:ml-[100px] md:mr-[100px] lg:ml-[250px] lg:mr-[250px] p-3 font-semibold">
+            <h2 class="flex justify-center text-[#17449c] font-semibold text-2xl mb-2 md:text-3xl md:mb-3 lg:text-4xl lg:mb-4">Responsabilidad</h2>
+            <p class="flex justify-center text-sm md:text-base pl-[50px] pr-[50px] text-justify">
+                A través de una atención personalizada, Confiable y una respuesta 
+                rápida y eficaz satisfacemos las necesidades y requerimiento de nuestros 
+                clientes con compromiso y responsabilidad.            
+            </p>
+            <ul class=" list-disc pl-[80px] pr-[80px] text-justify">
+                <li class="pt-2">Control según disposición A.N.M.A.T.</li>
+                <li class="pt-2">Garantía de envase correcto, cadena de frío y fecha de vencimiento.
+                trazabilidad.</li>
+                <li class="pt-2">Tránsito interjurisdiccional.</li>
+                <li class="pt-2">Comercialización y distribución de medicamentos para terapias especiales.</li>
+                <li class="pt-2">Dispensa de medicamentos a través de farmacias de todo el país.</li>
+                <li class="pt-2">Recepción de pedidos y cotizaciones online.</li>
+                <li class="pt-2">atención durante las 24 horas, Los 365 días del año.</li>
+                <li class="pt-2">Evaluación de protocolos y listado de medicamentos de alto costo.</li>
+                <li class="pt-2">Convenios capitados con obras sociales.</li>
+                <li class="pt-2">Centro de atención telefónica.</li>
+                <li class="pt-2">Stock permanente</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="bg-[url('/img/fondoAzulConLogo.png')] w-full mt-8">
+        <picture class=" flex justify-evenly overflow-hidden">
+            <img class="w-[147px] sm:w-[170px] md:w-[210px] lg:w-[250px] h-auto p-1 rounded-lg" src={image1} alt="">
+            <img class="w-[147px] sm:w-[170px] md:w-[210px] lg:w-[250px] h-auto p-1 rounded-lg" src={image2} alt="">
+            <img class="w-[147px] sm:w-[170px] md:w-[210px] lg:w-[250px] h-auto p-1 rounded-lg" src={image3} alt="">
+            <img class="w-[147px] sm:w-[170px] md:w-[210px] lg:w-[250px] h-auto p-1 rounded-lg" src={image4} alt="">
+        </picture>
+    </div>
+
+    <section class="mt-8">
+        <picture>
+            <img class="absolute z-11 w-[100px] sm:w-[130px] md:w-[160px] lg:w-[250px] h-auto top-[1420px] sm:top-[1000px] md:top-[1080px] lg:top-[850px] left-[20px] sm:left-[15px] md:left-[50px] rounded-lg" src={imgProf1} alt="">
+            <img class="absolute z-11 w-[100px] sm:w-[130px] md:w-[160px] lg:w-[250px] h-auto top-[1700px] sm:top-[1200px] md:top-[1300px] lg:top-[1100px] right-[20px] md:md:right-[50px] rounded-lg" src={imgProf2} alt="">
+            <img class="absolute z-11 w-[100px] sm:w-[130px] md:w-[160px] lg:w-[250px] h-auto top-[1950px] sm:top-[1400px] md:top-[1500px] lg:top-[1300px] left-[20px] md:left-[50px] rounded-lg" src={imgProf3} alt="">
+            <img class="absolute z-11 w-[100px] sm:w-[130px] md:w-[160px] lg:w-[250px] h-auto top-[2240px] sm:top-[1630px] md:top-[1700px] lg:top-[1550px] right-[10px] sm:right-[20px] md:md:right-[50px] rounded-lg" src={imgProf4} alt="">
+        </picture>
+        <div class="border border-[#17449c] rounded-lg ml-[50px] mr-[50px] sm:ml-[70px] sm:mr-[70px] md:ml-[100px] md:mr-[100px] lg:ml-[250px] lg:mr-[250px] p-3 font-semibold">
+            <h2 class="flex justify-center text-[#17449c] font-semibold text-2xl mb-2 md:text-3xl md:mb-3 lg:text-4xl lg:mb-4">Profesionalismo</h2>
+            <p class="flex justify-center text-sm md:text-base pl-[50px] pr-[50px] text-justify">
+                Nuestro sistema de distribucion.se encuentra dentro de las normativas de ANMAT asegurando
+                técnica y legalmente toda la operatoria a través de la trazabilidad de todos los productos
+                entregados:                
+            </p>
+            <ul class=" list-disc pl-[80px] sm:pl-[100px] md:pl-[140px] lg:pl-[250px] pr-[20px] text-justify">
+                <li class="pt-2">Medicación Hospitalaria.</li>
+                <li class="pt-2">Insumos y Accesorios Hospitalarios.</li>
+                <li class="pt-2">Trasplante.</li>
+                <li class="pt-2">Vacunas.</li>
+                <li class="pt-2">HIV.</li>
+                <li class="pt-2">Oncología.</li>
+                <li class="pt-2">Patologías Especiales.</li>
+                <li class="pt-2">Inmunosupresión Post Transplante.</li>
+                <li class="pt-2">Esclerosis Múltiple.</li>
+                <li class="pt-2">Asma y otras enfermedades respiratorias.</li>
+                <li class="pt-2">Colagenopatías.</li>
+                <li class="pt-2">Diabetes.</li>
+                <li class="pt-2">Discapacidades.</li>
+                <li class="pt-2">Enfermedades Osteoarticulares.</li>
+                <li class="pt-2">Fibrosis quística.</li>
+                <li class="pt-2">Hepatitis.</li>
+                <li class="pt-2">Hormonas de crecimiento.</li>
+                <li class="pt-2">Material Biomédico.</li>
+                <li class="pt-2">Nutrición (parental-enteral).</li>
+                <li class="pt-2">Antibióticos.</li>
+                <li class="pt-2">Colostomía e Ileostomía.</li>
+            </ul>
+        </div>
+    </section>
+    
+</Layout>

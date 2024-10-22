@@ -1,0 +1,23 @@
+---
+import SectionHome from '../components/SectionHome.astro';
+import { Slider } from '../components/Slider.jsx';
+import Layout from '../layouts/Layout.astro';
+import { sectionHomeImg } from '../../assets/dataSectionImg.js'
+
+const { image1, image2, image3, image4 } = sectionHomeImg
+---
+
+<Layout title="home">
+	<Slider client:load/>
+
+	<div class="bg-[url('/img/fondoAzulConLogo.png')] w-full mt-10">
+        <picture class=" flex justify-evenly overflow-hidden">
+            <img class="w-[147px] sm:w-[170px] md:w-[210px] lg:w-[250px] h-auto p-1 rounded-lg" src={image1} alt="">
+            <img class="w-[147px] sm:w-[170px] md:w-[210px] lg:w-[250px] h-auto p-1 rounded-lg" src={image2} alt="">
+            <img class="w-[147px] sm:w-[170px] md:w-[210px] lg:w-[250px] h-auto p-1 rounded-lg" src={image3} alt="">
+            <img class="w-[147px] sm:w-[170px] md:w-[210px] lg:w-[250px] h-auto p-1 rounded-lg" src={image4} alt="">
+        </picture>
+    </div>
+
+	<SectionHome/>
+</Layout>
